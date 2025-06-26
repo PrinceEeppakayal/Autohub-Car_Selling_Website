@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoHub - Premium Car Dealership</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <span class="text-white">AUTO<span class="logo-text">HUB</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-auto">
+            <li class="nav-item"> <a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#cars">Cars</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#reviews">Reviews</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <!-- Search Bar -->
+          <div class="search-wrapper me-3">
+            <div class="input-group">
+              <input type="search" class="form-control search-input" placeholder="Search cars..." aria-label="Search"/>
+              <button class="btn btn-search" type="button"><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+
+          <!-- Redesigned Login Button -->
+          <div class="login-wrapper">
+            <button class="btn btn-auth" data-bs-toggle="modal" data-bs-target="#authModal">
+              <i class="bi bi-person-circle me-2"></i>
+              <span class="d-none d-md-inline">Account</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="video-background">
+        <video autoplay muted loop><source src="car_background.mp4" type="video/mp4" /> Your browser does not support the video tag.</video>
+      </div>
+      <div class="video-overlay"></div>
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-3 fw-bold mb-4">Find Your Perfect Car At <span class="text-accent">AUTOHUB</span></h1>
+            <p class="lead mb-4"> Discover our premium selection of cars with best-in-class features and pricing that won't break the bank.</p>
+            <a href="#cars" class="btn btn-accent btn-lg me-3 mb-2">Explore Cars</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg mb-2">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="container section-padding">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Our <span class="text-accent">Premium Cars</span></h2>
+        <p class="text-muted">Explore our collection of luxury and affordable vehicles</p>
+      </div>
+      <div class="row g-4">
+        <!-- Car 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="car-card card h-100 border-0 shadow">
+            <div class="car-img-container">
+              <img src="mercedes benz c class.webp" class="card-img-top" alt="Mercedes Benz C-Class"/>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold mb-0">Mercedes-Benz C-Class</h5>
+                <span class="badge bg-accent badge-price">₹38.8 Lakh</span>
+              </div>
+              <p class="card-text text-muted"> Luxury sedan with premium features, exceptional performance, and elegant design.</p>
+              <div class="d-flex justify-content-between">
+                <div><i class="bi bi-calendar me-1"></i> 2023</div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-top-0 pt-0">
+              <div class="d-grid">
+                <a href="#" class="btn btn-outline-accent" data-bs-toggle="modal" data-bs-target="#carDetailModal"> View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="car-card card h-100 border-0 shadow">
+            <div class="car-img-container">
+              <img src="bmw 5 series.webp" class="card-img-top" alt="BMW 5 Series"/>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold mb-0">BMW 5 Series</h5>
+                <span class="badge bg-accent badge-price">₹45.6 Lakh</span>
+              </div>
+              <p class="card-text text-muted"> Executive sedan combining advanced technology with dynamic driving performance.</p>
+              <div class="d-flex justify-content-between">
+                <div><i class="bi bi-calendar me-1"></i> 2024</div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-top-0 pt-0">
+              <div class="d-grid">
+                <a href="#" class="btn btn-outline-accent">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="car-card card h-100 border-0 shadow">
+            <div class="car-img-container">
+              <img src="audi q7.webp" class="card-img-top" alt="Audi Q7"/>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold mb-0">Audi Q7</h5>
+                <span class="badge bg-accent badge-price">₹53.2 Lakh</span>
+              </div>
+              <p class="card-text text-muted">Luxurious and spacious SUV with premium interior and powerful engine options.</p>
+              <div class="d-flex justify-content-between">
+                <div><i class="bi bi-calendar me-1"></i> 2023</div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-top-0 pt-0">
+              <div class="d-grid">
+                <a href="#" class="btn btn-outline-accent">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="car-card card h-100 border-0 shadow">
+            <div class="car-img-container">
+              <img src="tesla model 3.webp" class="card-img-top" alt="Tesla Model 3"/>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold mb-0">Tesla Model 3</h5>
+                <span class="badge bg-accent badge-price">₹34.4 Lakh</span>
+              </div>
+              <p class="card-text text-muted">All-electric sedan with minimalist design, cutting-edge tech, and impressive range.</p>
+              <div class="d-flex justify-content-between">
+                <div><i class="bi bi-calendar me-1"></i> 2024</div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-top-0 pt-0">
+              <div class="d-grid">
+                <a href="#" class="btn btn-outline-accent">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="car-card card h-100 border-0 shadow">
+            <div class="car-img-container">
+              <img src="range-rover-sport.webp" class="card-img-top" alt="Range Rover Sport"/>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold mb-0">Range Rover Sport</h5>
+                <span class="badge bg-accent badge-price">₹65.5 Lakh</span>
+              </div>
+              <p class="card-text text-muted">High-end SUV combining off-road capability with refined luxury and style.</p>
+              <div class="d-flex justify-content-between">
+                <div><i class="bi bi-calendar me-1"></i> 2023</div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-top-0 pt-0">
+              <div class="d-grid">
+                <a href="#" class="btn btn-outline-accent">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="car-card card h-100 border-0 shadow">
+            <div class="car-img-container">
+              <img src="porsche 911.webp" class="card-img-top" alt="Porsche 911"/>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title fw-bold mb-0">Porsche 911</h5>
+                <span class="badge bg-accent badge-price">₹91.7 Lakh</span>
+              </div>
+              <p class="card-text text-muted">Iconic sports car with exceptional performance, precision handling, and timeless design.</p>
+              <div class="d-flex justify-content-between">
+                <div><i class="bi bi-calendar me-1"></i> 2024</div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-top-0 pt-0">
+              <div class="d-grid">
+                <a href="#" class="btn btn-outline-accent">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-accent btn-lg">View All Cars</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container section-padding">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our <span class="text-accent">Services</span></h2>
+          <p class="text-muted">Premium automotive solutions tailored to your needs</p>
+        </div>
+        <div class="row g-4">
+          <!-- Service 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-cash-coin"></i>
+              </div>
+              <h4 class="fw-bold mt-4 mb-3">Financing Solutions</h4>
+              <p>Get flexible payment options with competitive interest rates and customized financing plans tailored to your budget.</p>
+              <a href="#" class="btn btn-sm btn-outline-accent mt-2" data-bs-toggle="modal" data-bs-target="#serviceDetailModal">Learn More</a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-arrow-repeat"></i>
+              </div>
+              <h4 class="fw-bold mt-4 mb-3">Trade-In Programs</h4>
+              <p>Exchange your current vehicle for a new one with our hassle-free trade-in program offering fair market value assessments.</p>
+              <a href="#" class="btn btn-sm btn-outline-accent mt-2">Learn More</a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4 class="fw-bold mt-4 mb-3">Extended Warranty</h4>
+              <p>Protect your investment with our comprehensive extended warranty packages covering mechanical and electrical components.</p>
+              <a href="#" class="btn btn-sm btn-outline-accent mt-2">Learn More</a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h4 class="fw-bold mt-4 mb-3">Premium Maintenance</h4>
+              <p>Keep your vehicle in optimal condition with our scheduled maintenance services performed by certified technicians.</p>
+              <a href="#" class="btn btn-sm btn-outline-accent mt-2">Learn More</a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-droplet-half"></i>
+              </div>
+              <h4 class="fw-bold mt-4 mb-3">Detailing Services</h4>
+              <p>Restore your vehicle's showroom shine with our premium detailing packages covering both exterior and interior care.</p>
+              <a href="#" class="btn btn-sm btn-outline-accent mt-2">Learn More</a>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+              <h4 class="fw-bold mt-4 mb-3">Vehicle Inspection</h4>
+              <p>Comprehensive multi-point inspection service ensuring peak performance, safety, and reliability of your vehicle.</p>
+              <a href="#" class="btn btn-sm btn-outline-accent mt-2">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="review-section">
+      <div class="container section-padding">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Customer <span class="text-accent">Reviews</span></h2>
+          <p class="text-muted">What our satisfied customers are saying about us</p>
+        </div>
+        <div class="row g-4">
+          <!-- Review 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="review-card">
+              <div class="d-flex align-items-center mb-4">
+                <img src="review1.jpg" alt="Customer 1" class="review-img me-3"/>
+                <div>
+                  <h5 class="mb-1 fw-bold">Michael Johnson</h5>
+                  <div class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">"I had an amazing experience with AutoHub. The staff was incredibly helpful and knowledgeable. They helped me find the perfect car for my needs and the financing process was smooth and easy."</p>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="review-card">
+              <div class="d-flex align-items-center mb-4">
+                <img src="review2.jpg" alt="Customer 2" class="review-img me-3"/>
+                <div>
+                  <h5 class="mb-1 fw-bold">John Williams</h5>
+                  <div class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">"AutoHub offers an incredible selection of vehicles at competitive prices. The purchasing process was transparent and straightforward. I'm extremely satisfied with my new car and the service I received."</p>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="review-card">
+              <div class="d-flex align-items-center mb-4">
+                <img src="review3.jpg" alt="Customer 3" class="review-img me-3"/>
+                <div>
+                  <h5 class="mb-1 fw-bold">Jake Thompson</h5>
+                  <div class="text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">"I was hesitant about buying a car online, but AutoHub made the process so easy. Their virtual tours were detailed, and the car was even better in person. Delivery was prompt and the car was in perfect condition."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-accent text-white py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Ready to Find Your Dream Car?</h2>
+        <p class="lead mb-4">Browse our extensive collection or contact our team for personalized assistance.</p>
+        <a href="#cars" class="btn btn-light btn-lg me-3 mb-2">Browse Cars</a>
+        <a href="#contact" class="btn btn-outline-light btn-lg mb-2">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container section-padding">
+        <div class="row">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h2 class="section-title fw-bold">Contact Us</h2>
+            <p class="mb-4"> Have questions or want to schedule a test drive? Reach out to our friendly team today.</p>
+            <div class="d-flex mb-4">
+              <div class="me-4 text-accent">
+                <i class="bi bi-geo-alt-fill fs-3"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold">Visit Us</h5>
+                <p class="mb-0">Antilia, Breach Candy, Mumbai-400026</p>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <div class="me-4 text-accent">
+                <i class="bi bi-telephone-fill fs-3"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold">Call Us</h5>
+                <p class="mb-0">+91 9564326479</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="me-4 text-accent">
+                <i class="bi bi-envelope-fill fs-3"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold">Email Us</h5>
+                <p class="mb-0">info@autohub.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="bg-white p-4 rounded shadow">
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe" required/>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="john@example.com" required/>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="+91 00000 00000" required/>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="interest" class="form-label">Interested In</label>
+                    <select class="form-select" id="interest" required>
+                      <option value="" selected>Select an option</option>
+                      <option value="purchase">Car Purchase</option>
+                      <option value="test-drive">Test Drive</option>
+                      <option value="information">More Information</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="How can we help you?" required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-accent">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-4">AUTO<span class="text-accent">HUB</span></h4>
+            <p class="text-white-50"> Your trusted destination for premium and affordable vehicles. We offer the best selection, transparent pricing, and excellent customer service.</p>
+            <div class="social-icons mt-4">
+              <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-twitter-x fs-5"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#home" class="text-white-50 text-decoration-none">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="#cars" class="text-white-50 text-decoration-none">Cars</a>
+              </li>
+              <li class="mb-2">
+                <a href="#services" class="text-white-50 text-decoration-none">Services</a>
+              </li>
+              <li class="mb-2">
+                <a href="#reviews" class="text-white-50 text-decoration-none">Reviews</a>
+              </li>
+              <li class="mb-2">
+                <a href="#contact" class="text-white-50 text-decoration-none">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="text-white mb-4">Newsletter</h5>
+            <p class="text-white-50">Subscribe to receive updates on new arrivals and special offers.</p>
+            <form id="subscribeForm" class="mt-4">
+              <div class="input-group mb-3">
+                <input type="email" id="subscribeEmail" class="form-control" placeholder="Email Address" aria-label="Email Address" required/>
+                <button class="btn btn-accent" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4 text-white-50"/>
+        <div class="text-center text-white-50">
+          <p class="mb-0">&copy; 2025 AutoHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login/Register Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold" id="authModalLabel">Account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Modal Tabs -->
+            <ul class="nav nav-tabs nav-fill mb-4" id="authTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-pane" type="button" role="tab" aria-controls="login-pane" aria-selected="true">Login</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register-pane" type="button" role="tab" aria-controls="register-pane" aria-selected="false">Register</button>
+              </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="authTabContent">
+              <!-- Login Form -->
+              <div class="tab-pane fade show active" id="login-pane" role="tabpanel" aria-labelledby="login-tab">
+                <form id="loginForm">
+                  <div class="mb-3">
+                    <label for="authEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="authEmail" placeholder="Enter your email" required/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="authPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="authPassword" placeholder="Enter your password" required/>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="authRememberMe"/>
+                    <label class="form-check-label" for="authRememberMe">Remember me</label>
+                  </div>
+                  <button type="submit" class="btn btn-accent w-100">Login</button>
+                  <div class="text-center mt-3">
+                    <a href="#" class="text-accent">Forgot Password?</a>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Register Form -->
+              <div class="tab-pane fade" id="register-pane" role="tabpanel" aria-labelledby="register-tab">
+                <form id="registerForm">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="authFirstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="authFirstName" placeholder="Enter first name" required/>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="authLastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="authLastName" placeholder="Enter last name" required/>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="authRegisterEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="authRegisterEmail" placeholder="Enter your email" required/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="authPhoneNumber" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="authPhoneNumber" placeholder="Enter your phone number" required/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="authRegisterPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="authRegisterPassword" placeholder="Create a password" required/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="authConfirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="authConfirmPassword" placeholder="Confirm your password" required/>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="authTermsAgree" required/>
+                    <label class="form-check-label" for="authTermsAgree">I agree to the<a href="#" class="text-accent">Terms of Service</a> and<a href="#" class="text-accent">Privacy Policy</a></label>
+                  </div>
+                  <button type="submit" class="btn btn-accent w-100">Register</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Car Detail Modal -->
+    <div class="modal fade" id="carDetailModal" tabindex="-1" aria-labelledby="carDetailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <h4 class="modal-title fw-bold text-accent" id="carDetailModalLabel">Mercedes-Benz C-Class Details</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <!-- Car Gallery -->
+              <div class="col-lg-7">
+                <div id="carDetailCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carDetailCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carDetailCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carDetailCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carDetailCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                      <img src="mercedes-benz-c-class.avif" class="d-block w-100" alt="Mercedes C-Class Front" style="object-fit: cover; height: 400px"/>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="mercedes front.jpeg" class="d-block w-100" alt="Mercedes C-Class Side" style="object-fit: cover; height: 400px"/>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="mercedes rear.jpg" class="d-block w-100" alt="Mercedes C-Class Rear" style="object-fit: cover; height: 400px"/>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="mercedes interior.webp" class="d-block w-100" alt="Mercedes C-Class Interior" style="object-fit: cover; height: 400px"/>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carDetailCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carDetailCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="mt-3">
+                  <h5 class="mb-3 fw-bold">Description</h5>
+                  <p> The Mercedes-Benz C-Class is a line of luxury compact executive cars produced by Mercedes-Benz. Introduced in 1993 as a replacement for the 190 (W201) range, the C-Class has been available with a "traditional" sedan/saloon, a station wagon/estate, a coupé, and a convertible version.</p>
+                  <p> This particular 2023 C-Class sedan represents the latest generation, known for its elegant design, luxurious interior, and refined driving experience. With a powerful diesel engine, it delivers both performance and efficiency for discerning drivers.</p>
+                </div>
+              </div>
+
+              <!-- Car Details -->
+              <div class="col-lg-5">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-body">
+                    <h4 class="mb-4 fw-bold"> ₹38.8 Lakh <span class="badge bg-success ms-2">Available</span></h4>
+
+                    <div class="mb-4">
+                      <h5 class="fw-bold mb-3">Key Features</h5>
+                      <div class="row">
+                        <div class="col-6 mb-3">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-calendar-check me-2 text-accent"></i>
+                            <div>
+                              <small class="text-muted d-block">Year</small>
+                              <span>2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-fuel-pump me-2 text-accent"></i>
+                            <div>
+                              <small class="text-muted d-block">Fuel</small>
+                              <span>Diesel</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-speedometer2 me-2 text-accent"></i>
+                            <div>
+                              <small class="text-muted d-block">Mileage</small>
+                              <span>15,000 mi</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-gear me-2 text-accent"></i>
+                            <div>
+                              <small class="text-muted d-block">Transmission</small>
+                              <span>Automatic</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-car-front me-2 text-accent"></i>
+                            <div>
+                              <small class="text-muted d-block">Body</small>
+                              <span>Sedan</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-palette me-2 text-accent"></i>
+                            <div>
+                              <small class="text-muted d-block">Color</small>
+                              <span>Silver</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mb-4">
+                      <h5 class="fw-bold mb-3">Technical Specifications</h5>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-0 d-flex justify-content-between">
+                          <span>Engine</span>
+                          <span>2.0L 4-cylinder</span>
+                        </li>
+                        <li class="list-group-item px-0 d-flex justify-content-between">
+                          <span>Power</span>
+                          <span>255 hp @ 5,800 rpm</span>
+                        </li>
+                        <li class="list-group-item px-0 d-flex justify-content-between">
+                          <span>Torque</span>
+                          <span>370 Nm @ 1,800-4,000 rpm</span>
+                        </li>
+                        <li class="list-group-item px-0 d-flex justify-content-between">
+                          <span>Acceleration</span>
+                          <span>0-100 km/h in 6.0s</span>
+                        </li>
+                        <li class="list-group-item px-0 d-flex justify-content-between">
+                          <span>Top Speed</span>
+                          <span>250 km/h</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-accent" id="scheduleTestDrive" data-bs-toggle="modal" data-bs-target="#testDriveModal">
+                        <i class="bi bi-calendar2-check me-2"></i> Schedule Test Drive
+                      </button>
+                      <button class="btn btn-outline-accent" id="requestCallBack">
+                        <i class="bi bi-telephone me-2"></i> Request Call Back
+                      </button>
+                    </div>
+
+                    <div class="alert alert-success my-3 d-none" id="requestSuccess">
+                      <i class="bi bi-check-circle me-2"></i> Your request has been submitted successfully. Our team will contact you shortly.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schedule Test Drive Modal -->
+    <div class="modal fade" id="testDriveModal" tabindex="-1" aria-labelledby="testDriveModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold" id="testDriveModalLabel">Schedule a Test Drive</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="testDriveForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="testDriveName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="testDriveName" placeholder="Enter your name" required/>
+                </div>
+                <div class="col-md-6">
+                  <label for="testDriveEmail" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="testDriveEmail" placeholder="Enter your email" required/>
+                </div>
+                <div class="col-md-6">
+                  <label for="testDrivePhone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="testDrivePhone" placeholder="Enter your phone" required/>
+                </div>
+                <div class="col-md-6">
+                  <label for="testDriveDate" class="form-label">Preferred Date</label>
+                  <input type="date" class="form-control" id="testDriveDate" required min="2025-04-10"/>
+                </div>
+                <div class="col-12">
+                  <label for="testDriveTime" class="form-label">Preferred Time</label>
+                  <select class="form-select" id="testDriveTime" required>
+                    <option value="">Select a time</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-accent w-100">Schedule Test Drive</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Detail Modal -->
+    <div class="modal fade" id="serviceDetailModal" tabindex="-1" aria-labelledby="serviceDetailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <h4 class="modal-title fw-bold text-accent" id="serviceDetailModalLabel">Financing Solutions</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <!-- Service Details -->
+              <div class="col-lg-6">
+                <h5 class="mb-3 fw-bold">Flexible Financing Options</h5>
+                <p> At AutoHub, we understand that purchasing a vehicle is a significant investment. That's why we offer a variety of financing solutions tailored to meet your unique needs and budget constraints. Our partnerships with leading financial institutions allow us to provide competitive interest rates and flexible terms.</p>
+                <p> Whether you're looking for a traditional auto loan, lease options, or specialized financing programs for first-time buyers or those with challenging credit histories, our finance team is here to help you explore all available options.</p>
+                <h5 class="mb-3 mt-4 fw-bold">Our Financing Advantages</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0 d-flex">
+                    <i class="bi bi-check-circle-fill text-accent me-2 mt-1"></i>
+                    <span>Competitive interest rates starting from 6.99% APR</span>
+                  </li>
+                  <li class="list-group-item px-0 d-flex">
+                    <i class="bi bi-check-circle-fill text-accent me-2 mt-1"></i>
+                    <span>Flexible loan terms from 24 to 84 months</span>
+                  </li>
+                  <li class="list-group-item px-0 d-flex">
+                    <i class="bi bi-check-circle-fill text-accent me-2 mt-1"></i>
+                    <span>No prepayment penalties or hidden fees</span>
+                  </li>
+                  <li class="list-group-item px-0 d-flex">
+                    <i class="bi bi-check-circle-fill text-accent me-2 mt-1"></i>
+                    <span>Quick pre-approval process, often within 24 hours</span>
+                  </li>
+                  <li class="list-group-item px-0 d-flex">
+                    <i class="bi bi-check-circle-fill text-accent me-2 mt-1"></i>
+                    <span>Special programs for first-time buyers</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Contact Form -->
+              <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-body">
+                    <h5 class="fw-bold mb-3">Request Financing Information</h5>
+                    <p class="text-muted mb-4"> Fill out the form below to speak with a financing specialist who can help you explore options tailored to your specific needs and budget.</p>
+                    <form id="financingForm">
+                      <div class="mb-3">
+                        <label for="financingName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="financingName" placeholder="John Doe" required/>
+                      </div>
+                      <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                          <label for="financingEmail" class="form-label">Email Address</label>
+                          <input type="email" class="form-control" id="financingEmail" placeholder="john@example.com" required/>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="financingPhone" class="form-label">Phone Number</label>
+                          <input type="tel" class="form-control" id="financingPhone" placeholder="+91 00000 00000" required/>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="financingAmount" class="form-label">Desired Loan Amount (₹)</label>
+                        <input type="number" class="form-control" id="financingAmount" placeholder="Enter amount" required/>
+                      </div>
+                      <div class="mb-3">
+                        <label for="financingTerm" class="form-label">Preferred Loan Term</label>
+                        <select class="form-select" id="financingTerm" required>
+                          <option value="" selected>Select term length</option>
+                          <option value="24">24 Months (2 Years)</option>
+                          <option value="36">36 Months (3 Years)</option>
+                          <option value="48">48 Months (4 Years)</option>
+                          <option value="60">60 Months (5 Years)</option>
+                          <option value="72">72 Months (6 Years)</option>
+                          <option value="84">84 Months (7 Years)</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="financingMessage" class="form-label">Additional Information</label>
+                        <textarea class="form-control" id="financingMessage" rows="3" placeholder="Any specific questions or details about your financing needs..." ></textarea>
+                      </div>
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-accent"> Submit Request </button>
+                      </div>
+                    </form>
+
+                    <div class="alert alert-success my-3 d-none" id="financingSuccess">
+                      <i class="bi bi-check-circle me-2"></i> Your financing inquiry has been submitted successfully. A finance specialist will contact you within 24 hours.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="profileModalLabel">My Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="profileModalBody">
+            <!-- Profile content will be loaded here by JS -->
+            <p>Loading profile...</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Test Drives Modal -->
+    <div class="modal fade" id="testDrivesModal" tabindex="-1" aria-labelledby="testDrivesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="testDrivesModalLabel">My Scheduled Test Drives</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="testDrivesModalBody">
+            <!-- Test drives list will be loaded here by JS -->
+            <p>Loading test drives...</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap and custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
