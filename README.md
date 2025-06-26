@@ -37,7 +37,7 @@ node start
 ## 📄 License
 This project is for learning purposes and is open to modification and reuse.
 
-## Author
+## 🧠 Author
 1. Prince Eppakayal
 2. Jyotiraditya Bhosale
 3. Om Rajbhar
