@@ -32,7 +32,7 @@ npm install
 4. **Start the Server:**
 node start
 
-5. **Open your browser and go to http://127.0.0.1:5500/index.html**
+5. **Open your browser and go to https://princeeeppakayal.github.io/Autohub-Car_Selling_Website/**
 
 ## 📄 License
 This project is for learning purposes and is open to modification and reuse.
